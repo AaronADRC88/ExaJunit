@@ -54,13 +54,13 @@ public class Calculo {
     }
 
     //método para calcular el MCD
-    public int obtenerMCD(int num1, int num2) {
+    public String obtenerMCD(int num1, int num2) {
         int resto;
         int numDiv1 = num1;
         int numDiv2 = num2;
 
         if (num1 < 0 || num2 < 0) {
-            return 0;
+            return String.valueOf(0);
         }
 
         try {
@@ -73,10 +73,10 @@ public class Calculo {
             } while (resto != 0);
 
             mensajeResultado = "Cálculo correcto";
-            return numDiv2;
+            return String.valueOf(numDiv2);
         } catch (Exception e) {
             mensajeResultado = "Error en cálculo de MCD: " + e.getMessage();
-            return 0;
+            return String.valueOf(0);
         }
     }
 }

@@ -31,8 +31,8 @@ public class CalculoTest {
         int num1 = 10;
         int num2 = 4;
         Calculo instance = new Calculo();
-        int expResult = 2;
-        int result = instance.obtenerMCD(num1, num2);
+        String expResult = "2";
+        String result = instance.obtenerMCD(num1, num2);
         assertEquals(expResult, result,0);
         
     }
