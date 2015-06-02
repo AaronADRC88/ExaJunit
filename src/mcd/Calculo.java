@@ -72,11 +72,11 @@ public class Calculo {
                 }
             } while (resto != 0);
 
-            mensajeResultado = "Cálculo correcto";
-            return String.valueOf(numDiv2);
+            mensajeResultado = " Cálculo correcto";
+            return String.valueOf(numDiv2)+mensajeResultado;
         } catch (Exception e) {
             mensajeResultado = "Error en cálculo de MCD: " + e.getMessage();
-            return String.valueOf(0);
+            return String.valueOf(0)+mensajeResultado;
         }
     }
 }
