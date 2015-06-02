@@ -43,7 +43,7 @@ public class CalculoParamTest {
      */
     @Test
     public void testObtenerMCD() {
-        System.out.println("obtenerMCD" + num1 + num2 + expResult);
+        System.out.println("obtenerMCD" + " primer operando "+num1 + " segundo operando "+num2 + " resultado "+expResult);
         int result = instance.obtenerMCD(num1, num2);
         assertEquals(expResult, result,0);
     }
