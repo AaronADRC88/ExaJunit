@@ -33,7 +33,7 @@ public class CalculoTest {
         Calculo instance = new Calculo();
         String expResult = "2 Cálculo correcto";
         String result = instance.obtenerMCD(num1, num2);
-        assertEquals(expResult, result,0);
+        assertEquals(expResult, result);
         
     }
     
